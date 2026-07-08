@@ -1,4 +1,6 @@
-/* Estilos generales del sitio */
+/*
+   Estilos generales del sitio
+*/
 * {
     box-sizing: border-box;
 }
@@ -23,6 +25,9 @@ body {
     border: 0.15rem solid #204b5a;
 }
 
+/*
+   Encabezado, navegación y pie
+*/
 .encabezado,
 .pie {
     padding: 2rem;
@@ -104,6 +109,13 @@ h3 {
     color: #ffffff;
 }
 
+.pie a {
+    color: #ffffff;
+}
+
+/*
+   Contenido general
+*/
 main {
     padding: 2rem;
 }
@@ -139,16 +151,82 @@ figcaption {
 .bloque-dato,
 .bloque-texto,
 .seccion-galeria,
-.resultados,
-.panel-formulario,
-.columnas-tres article,
-.columna-menor,
-.columna-mayor {
+.resultados {
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 0.1rem solid #b6dce5;
+}
+
+/*
+   Layouts resueltos con flexbox
+*/
+.presentacion {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.texto-presentacion,
+.presentacion figure {
+    width: 50%;
+}
+
+.columnas-tres {
+    display: flex;
+    gap: 2rem;
+}
+
+.columnas-tres article {
+    width: 33.33%;
     padding: 1.2rem;
     background-color: #ffffff;
     border: 0.1rem solid #b6dce5;
 }
 
+.columnas-tres img {
+    margin-bottom: 1rem;
+}
+
+.columnas-dos {
+    display: flex;
+    gap: 2rem;
+}
+
+.columna-menor {
+    width: 35%;
+    padding: 1.2rem;
+    background-color: #eaf5f7;
+}
+
+.columna-mayor {
+    width: 65%;
+    padding: 1.2rem;
+    background-color: #ffffff;
+    border: 0.1rem solid #b6dce5;
+}
+
+.encabezado-seccion {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+}
+
+.ejercicio {
+    display: flex;
+    gap: 2rem;
+}
+
+.panel-formulario {
+    width: 50%;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 0.1rem solid #b6dce5;
+}
+
+/*
+   Botones, formularios y mensajes
+*/
 button {
     padding: 0.8rem 1rem;
     border: 0;
@@ -195,6 +273,35 @@ input:disabled {
     padding-left: 1.2rem;
 }
 
-.pie a {
-    color: #ffffff;
+/*
+   Galería de obras
+*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
+
+.galeria article {
+    width: 30%;
+    padding: 1rem;
+    background-color: #eaf5f7;
+    border: 0.1rem solid #b6dce5;
+}
+
+.galeria img {
+    height: 12rem;
+    width: 100%;
+}
+
+.galeria-grande article {
+    width: 45%;
+}
+
+.galeria-grande img {
+    height: 18rem;
+}
+
+    h1 {
+        font-size: 2.2rem;
+    }

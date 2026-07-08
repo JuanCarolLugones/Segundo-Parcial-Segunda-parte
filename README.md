@@ -1,6 +1,6 @@
 # Segundo Parcial - Informática General
 
-Nombre/s Apellido/s
+Juan Carol Lugones
 
 Artes Multimediales - UNA
 
