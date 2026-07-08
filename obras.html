@@ -11,11 +11,12 @@
 </head>
 <body>
     <div class="contenedor">
-        <header>
+        <header class="encabezado">
             <h1>Casey Reas</h1>
+            <p class="bajada">Código, sistemas y arte generativo contemporáneo</p>
         </header>
 
-        <nav>
+        <nav class="navegacion">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="obras.html">Obras</a></li>
@@ -24,13 +25,48 @@
         </nav>
 
         <main>
-            <section>
-                <h2>Obras</h2>
+            <section class="columnas-dos">
+                <article class="columna-menor">
+                    <h2>El código como sistema visual</h2>
+                    <p>Contenido de la columna menor.</p>
+                    <h3>Obras y conceptos clave</h3>
+                    <ul class="lista-conceptos">
+                        <li>Software Structures</li>
+                        <li>Process</li>
+                        <li>Generative Systems</li>
+                    </ul>
+                </article>
+
+                <article class="columna-mayor">
+                    <h2>Sistemas, reglas y variación</h2>
+                    <p>Contenido de la columna mayor.</p>
+                    <p>Contenido adicional sobre el trabajo del artista.</p>
+                </article>
+            </section>
+
+            <section class="seccion-galeria">
+                <div class="encabezado-seccion">
+                    <div>
+                        <h2>Galería generada con JavaScript</h2>
+                        <p>La galería se completará desde JavaScript.</p>
+                    </div>
+                    <button id="boton-diseno" type="button">Agrandar imágenes</button>
+                </div>
+
+                <div id="galeria" class="galeria">
+                    <!-- La galería se completa desde JavaScript -->
+                </div>
+            </section>
+
+            <section class="bloque-texto">
+                <h2>Influencia en el arte contemporáneo</h2>
+                <p>Contenido final de la página de obras.</p>
             </section>
         </main>
 
-        <footer>
+        <footer class="pie">
             <p>Segundo Parcial - Informática General | Artes Multimediales - UNA</p>
+            <p><a href="mailto:casey@artedigital.com">casey@artedigital.com</a></p>
         </footer>
     </div>
 </body>

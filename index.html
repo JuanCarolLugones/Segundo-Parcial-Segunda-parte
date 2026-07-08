@@ -11,11 +11,12 @@
 </head>
 <body>
     <div class="contenedor">
-        <header>
+        <header class="encabezado">
             <h1>Casey Reas</h1>
+            <p class="bajada">Código, sistemas y arte generativo contemporáneo</p>
         </header>
 
-        <nav>
+        <nav class="navegacion">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="obras.html">Obras</a></li>
@@ -24,13 +25,48 @@
         </nav>
 
         <main>
-            <section>
-                <h2>Inicio</h2>
+            <section class="presentacion">
+                <div class="texto-presentacion">
+                    <h2>Arte generativo y pensamiento computacional</h2>
+                    <p>Texto de presentación del artista.</p>
+                    <p>Texto introductorio sobre su obra.</p>
+                </div>
+                <figure>
+                    <img src="img/reas.jpg" alt="Retrato de Casey Reas">
+                    <figcaption>Casey Reas y el código como medio expresivo.</figcaption>
+                </figure>
+            </section>
+
+            <section class="columnas-tres">
+                <article>
+                    <h2>Un medio expresivo</h2>
+                    <img src="img/reas-1.jpg" alt="Obra generativa de Casey Reas">
+                    <p>Contenido de la primera columna.</p>
+                </article>
+
+                <article>
+                    <h2>Trayectoria</h2>
+                    <img src="img/reas-2.jpg" alt="Composición generativa de Casey Reas">
+                    <p>Contenido de la segunda columna.</p>
+                </article>
+
+                <article>
+                    <h2>Contribuciones</h2>
+                    <img src="img/reas-3.jpg" alt="Instalación visual generativa">
+                    <p>Contenido de la tercera columna.</p>
+                </article>
+            </section>
+
+            <section class="bloque-dato">
+                <h2>Dato curioso al azar</h2>
+                <p id="dato-curioso">Espacio para mostrar un dato curioso.</p>
+                <button id="boton-dato" type="button">Mostrar dato curioso</button>
             </section>
         </main>
 
-        <footer>
+        <footer class="pie">
             <p>Segundo Parcial - Informática General | Artes Multimediales - UNA</p>
+            <p><a href="mailto:casey@artedigital.com">casey@artedigital.com</a></p>
         </footer>
     </div>
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casey Reas | Ejercicio</title>
+    <title>Casey Reas | Ejercicio JavaScript</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
@@ -11,11 +11,12 @@
 </head>
 <body>
     <div class="contenedor">
-        <header>
+        <header class="encabezado">
             <h1>Casey Reas</h1>
+            <p class="bajada">Código, sistemas y arte generativo contemporáneo</p>
         </header>
 
-        <nav>
+        <nav class="navegacion">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="obras.html">Obras</a></li>
@@ -24,13 +25,67 @@
         </nav>
 
         <main>
-            <section>
-                <h2>Ejercicio</h2>
+            <section class="presentacion">
+                <div class="texto-presentacion">
+                    <h2>Gestión de producción de instalaciones</h2>
+                    <p>Indicaciones generales para usar el sistema.</p>
+                    <p>Primero se ingresan los datos generales y luego los datos de cada instalación.</p>
+                </div>
+                <figure>
+                    <img src="img/reas-3.jpg" alt="Instalación visual asociada al trabajo de Casey Reas">
+                    <figcaption>Ejercicio de gestión de costos.</figcaption>
+                </figure>
+            </section>
+
+            <section class="ejercicio">
+                <article class="panel-formulario">
+                    <h2>Datos generales</h2>
+                    <form id="form-datos" action="#" method="get">
+                        <label for="cantidad-instalaciones">Cantidad de instalaciones a producir</label>
+                        <input id="cantidad-instalaciones" type="number" min="1">
+
+                        <label for="horas-dia">Horas por día que trabaja cada persona</label>
+                        <input id="horas-dia" type="number" min="1">
+
+                        <label for="honorario-hora">Honorario por hora</label>
+                        <input id="honorario-hora" type="number" min="1">
+
+                        <button id="boton-iniciar" type="submit">Iniciar carga</button>
+                    </form>
+                </article>
+
+                <article class="panel-formulario">
+                    <h2>Datos de cada instalación</h2>
+                    <form id="form-instalacion" action="#" method="get">
+                        <label for="nombre-instalacion">Nombre de la instalación</label>
+                        <input id="nombre-instalacion" type="text" disabled>
+
+                        <label for="personas-instalacion">Personas necesarias</label>
+                        <input id="personas-instalacion" type="number" min="1" disabled>
+
+                        <label for="dias-instalacion">Días estimados de producción</label>
+                        <input id="dias-instalacion" type="number" min="1" disabled>
+
+                        <button id="boton-agregar" type="submit" disabled>Agregar instalación</button>
+                    </form>
+                    <p id="estado-carga" class="mensaje">Todavía no se inició la carga.</p>
+                </article>
+            </section>
+
+            <section class="resultados">
+                <h2>Resultados</h2>
+                <p>El botón de cálculo se habilita cuando se completa la carga.</p>
+                <button id="boton-calcular" type="button" disabled>Calcular resultados</button>
+                <button id="boton-reiniciar" type="button" disabled>Reiniciar</button>
+                <div id="salida-resultados" class="salida">
+                    <p>Los resultados aparecerán en este espacio.</p>
+                </div>
             </section>
         </main>
 
-        <footer>
+        <footer class="pie">
             <p>Segundo Parcial - Informática General | Artes Multimediales - UNA</p>
+            <p><a href="mailto:casey@artedigital.com">casey@artedigital.com</a></p>
         </footer>
     </div>
 </body>
