@@ -28,12 +28,12 @@
             <section class="presentacion">
                 <div class="texto-presentacion">
                     <h2>Gestión de producción de instalaciones</h2>
-                    <p>Indicaciones generales para usar el sistema.</p>
-                    <p>Primero se ingresan los datos generales y luego los datos de cada instalación.</p>
+                    <p>Este sistema permite cargar los datos necesarios para estimar costos de producción de instalaciones interactivas del estudio artístico de Casey Reas.</p>
+                    <p>Primero ingresá la cantidad de instalaciones, las horas de trabajo por día y el valor del honorario por hora. Después cargá los datos de cada instalación. Cuando termines la carga, se habilitará el botón para calcular los resultados.</p>
                 </div>
                 <figure>
                     <img src="img/reas-3.jpg" alt="Instalación visual asociada al trabajo de Casey Reas">
-                    <figcaption>Ejercicio de gestión de costos.</figcaption>
+                    <figcaption>El ejercicio calcula costos de producción para instalaciones interactivas.</figcaption>
                 </figure>
             </section>
 
@@ -74,7 +74,7 @@
 
             <section class="resultados">
                 <h2>Resultados</h2>
-                <p>El botón de cálculo se habilita cuando se completa la carga.</p>
+                <p>El botón de cálculo se habilita cuando se cargan todas las instalaciones indicadas.</p>
                 <button id="boton-calcular" type="button" disabled>Calcular resultados</button>
                 <button id="boton-reiniciar" type="button" disabled>Reiniciar</button>
                 <div id="salida-resultados" class="salida">
@@ -88,5 +88,7 @@
             <p><a href="mailto:casey@artedigital.com">casey@artedigital.com</a></p>
         </footer>
     </div>
+
+    <script src="js/ejercicio.js"></script>
 </body>
 </html>
