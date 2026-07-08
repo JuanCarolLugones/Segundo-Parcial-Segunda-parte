@@ -1,0 +1,15 @@
+/* Estilos generales iniciales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+nav a {
+    font-family: "Arvo", Georgia, serif;
+}
