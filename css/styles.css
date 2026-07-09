@@ -291,7 +291,7 @@ input:disabled {
 
 .galeria img {
     height: 12rem;
-    width: 100%;
+    object-fit: cover;
 }
 
 .galeria-grande article {
@@ -301,7 +301,3 @@ input:disabled {
 .galeria-grande img {
     height: 18rem;
 }
-
-    h1 {
-        font-size: 2.2rem;
-    }
