@@ -103,8 +103,10 @@ function agregarInstalacion(evento) {
 function calcularResultados() {
     let totalPersonas = 0;
     let costoTotalEstudio = 0;
+
+    // Se toma la primera instalación como referencia inicial para comparar.
     let instalacionMayorDias = instalacionesCargadas[0];
-    let costoInstalacionMayor = 0;
+    let costoInstalacionMayor = instalacionesCargadas[0].personas * instalacionesCargadas[0].dias * horasPorDia * honorarioPorHora;
 
     // Se recorren todas las instalaciones cargadas para hacer los cálculos.
     for (let i = 0; i < instalacionesCargadas.length; i++) {
@@ -113,17 +115,14 @@ function calcularResultados() {
         totalPersonas += instalacionesCargadas[i].personas;
         costoTotalEstudio += costoInstalacion;
 
+        // Se compara la cantidad de días para encontrar la instalación de producción más larga.
         if (instalacionesCargadas[i].dias > instalacionMayorDias.dias) {
             instalacionMayorDias = instalacionesCargadas[i];
             costoInstalacionMayor = costoInstalacion;
         }
     }
 
-    // Si la instalación con más días fue la primera, se calcula su costo al terminar el recorrido.
-    if (costoInstalacionMayor == 0) {
-        costoInstalacionMayor = instalacionMayorDias.personas * instalacionMayorDias.dias * horasPorDia * honorarioPorHora;
-    }
-
+    // Cálculos finales solicitados por la consigna.
     let costoDiaTrabajo = totalPersonas * horasPorDia * honorarioPorHora;
     let porcentaje = (costoInstalacionMayor * 100) / costoTotalEstudio;
 
@@ -135,6 +134,7 @@ function calcularResultados() {
         "<li>Porcentaje que representa sobre el costo total del estudio: " + porcentaje.toFixed(2) + "%</li>" +
         "</ul>";
 
+    // Después de calcular se deshabilita el cálculo y se habilita el reinicio.
     botonCalcular.disabled = true;
     botonReiniciar.disabled = false;
 }

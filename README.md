@@ -2,6 +2,5 @@
 
 Juan Carol Lugones
 
+Segundo Parcial - Informática General  
 Artes Multimediales - UNA
-
-Sitio web sobre Casey Reas.
